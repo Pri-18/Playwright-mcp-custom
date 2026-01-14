@@ -143,6 +143,7 @@ class StatelessMCPRunner {
       cwd: workspaceDir,
       args: [
         '@playwright/mcp@latest',
+        '--browser', 'chromium',
         '--ignore-https-errors',
         '--output-dir', 'test-screenshots',
         '--viewport-size', `${config.browser.viewport.width}x${config.browser.viewport.height}`
